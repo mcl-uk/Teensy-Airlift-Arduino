@@ -1,20 +1,15 @@
 
 // AirLift_APwWebServer http image transfer test sketch
+// For Teensy4.1 with AirLift breakout board 
 // Derived from WiFiNINA_Generic's example sketch AP_SimpleWebServer.ino
-// For Teensy 4.1 with AirLift breakout board 
-//
 // Instead of serving just two lines of static text we attempt here to serve
 // a ~2MB jpg file from the Teensy's SD-Card at /test.jpg
 //
 // Uses modified WiFiNINA_generic_1.8.15-1 library originally from:
 //   https://www.arduinolibraries.info/libraries/wi-fi-nina_generic
-// MCL modified version at:
-//   http://www.marvellconsultants.co.uk/temp/WiFiNINA_Generic.zip
 // May also rq: WiFiMulti_generic, WiFi101, WiFi101_Generic, WiFiEspAT, ESP_AT_Lib
 //
-// Wire the Airlift to the teensy according to schematic:
-//   http://www.marvellconsultants.co.uk/temp/Airlift_Sch.pdf
-// If you need to deviate from the above wiring be sure to edit
+// If you need to deviate from the default wiring be sure to edit
 //   <lib_path>/WiFiNINA_Generic/src/WiFiNINA_Pinout_Generic.h accordingly 
 //
 // First insert an SD card with a ~2MB JPG file at /test.jpg & run the sketch,
